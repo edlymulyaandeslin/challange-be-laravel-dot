@@ -1,6 +1,9 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductCrudController;
+use App\Http\Controllers\CategoryCrudController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +24,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+Route::resource('categories', CategoryCrudController::class)->names('categories');
+
+Route::resource('products', ProductCrudController::class)->names('products');
+
+require __DIR__ . '/auth.php';
