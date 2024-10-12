@@ -22,11 +22,11 @@ Endpoint API crud Product:
 
 ## Desain Database
 
-![Logo](img/db.png)
+![Logo](public/img/db.png)
 
 ## Screenshoot Application
 
-![Logo](img/app.png)
+![Logo](public/img/app.png)
 
 ## License
 
